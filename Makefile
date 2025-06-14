@@ -1,5 +1,5 @@
 CC=gcc
-CFLAGS=-c -Wall
+CFLAGS=-Wall
 SOURCE=os.hw3.2020069027.woojinshin.c
 EXE=os.hw3.2020069027.woojinshin
 all: $(EXE)

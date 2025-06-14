@@ -288,9 +288,6 @@ int main() {
         results[i].allocated_pages = malloc(results[i].size_of_allocated_pages * sizeof(unsigned int));
     }
 
-    // TODO 지워야함
-    int tx_count = 0;
-
     // initialize results pid value
     results[0].pid = vm_entries[0].pid;
     int tmp_pid_count = 1;
@@ -320,8 +317,6 @@ int main() {
 
         // value to check if outer entries have corresponding pid values
         int is_in_outer = 0;
-        // outer entries index
-        int outer_idx = 0;
 
         // find out if the pgd_idx is in outer
         for (int j = outer_pid_offset; j < outer_cnt; j++) {
